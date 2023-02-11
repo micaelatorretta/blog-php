@@ -1,9 +1,9 @@
-<?php require_once 'includes/cabecera.php'; ?>
-<?php require_once'includes/lateral.php'; ?>
+<?php require_once '../includes/cabecera.php'; ?>
+<?php require_once'../includes/lateral.php'; ?>
 
 <?php
     if(!isset($_POST['busqueda'])){
-        header ("Location: index.php");
+        header ("Location: ../index.php");
     }
     
 
@@ -42,4 +42,4 @@
 </div>
 
         
-<?php require_once 'includes/footer.php' ?>
+<?php require_once '../includes/footer.php' ?>

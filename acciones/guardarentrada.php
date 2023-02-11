@@ -1,7 +1,7 @@
 <?php
 
 if(isset($_POST)){
-    require_once 'includes/conexion.php';
+    require_once '../includes/conexion.php';
 
     $titulo= isset($_POST['titulo']) ? mysqli_real_escape_string($db,$_POST['titulo']) : false;
     $descripcion= isset($_POST['descripcion']) ? mysqli_real_escape_string($db,$_POST['descripcion']) : false;
@@ -38,9 +38,9 @@ if(isset($_POST)){
         $_SESSION["errores_entrada"]=$errores;
 
         if(isset($_GET['editar'])){
-            header("Location: editarentrada.php?id=".$_GET['editar']);
+            header("Location: ../editarentrada.php?id=".$_GET['editar']);
         }else{
-            header("Location: crearentrada.php");
+            header("Location: ../crearentrada.php");
         }
         
     }
