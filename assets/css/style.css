@@ -1,0 +1,316 @@
+@font-face {
+    font-family: "Little Comet Demo Version";
+    src: url(../fonts/fuente2.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+font-family: "fajala";
+src: url(../fonts/fuente.ttf) format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+/*Generales*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'sans-serif', 'helvetica', 'arial';
+    text-decoration: none;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+body{
+    font-family: "Little Comet Demo Version";
+    background: url(../img/cubes.png) #f4f4f4;
+}
+
+.alerta{
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    background: green;
+    box-shadow: 0px 1px 3px #ccc;
+    margin-bottom: 15px;
+    border-radius: 2px;
+    margin-top: 7px;
+}
+
+.alerta-error{
+    background: red;
+}
+
+.fecha{
+    color: rgb(101, 98, 101);
+    margin-top: 5px;
+    font-size: 14px;
+}
+/*Cabecera*/
+.header{
+    width: 85%;
+    height: auto;
+    background: transparent;
+    margin: 0px auto;
+
+}
+
+/*Logotipo*/
+.logo{
+    float:left;
+    width: 540px;
+    height: 100px;
+}
+
+.logo a{
+    font-family: "Little Comet Demo Version", helvetica;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: purple;
+    text-shadow: 0px 0px 0px white, 1px 1px 0px white, 2px 2px 0px white;
+    transition: all 500ms;
+    line-height: 90px;
+    margin-left: 10px;
+}
+
+.logo a:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 0px black, -1px -1px 0px black, -2px -2px 0px black;
+}
+
+/*Menu*/
+.nav{
+    clear: both;
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(to bottom, #f9f9f9 0px, #e9e9e9 100%);
+    border: 1px solid #c9c9c9;
+    border-radius: 8px;
+    box-shadow: 0px 1px 1px #ccc;
+    overflow: hidden;
+}
+
+.nav ul{
+    list-style: none;
+}
+
+.nav ul li{
+    float: left;
+    line-height: 44px;
+    border-right: 1px solid  #c9c9c9
+}
+
+.nav ul li a{
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    color: purple;
+}
+
+.nav ul li:hover{
+    background: linear-gradient(to bottom, #f2f2f2 0px, #dad9d4 100%);
+}
+
+/*Contenido*/
+.container{
+    width: 85%;
+    height: auto;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*Barra Lateral*/
+.sidebar{
+    float: right;
+    width: 27%;
+    min-height: auto;
+}
+
+.bloque{
+    display:block;
+    width: 90%;
+    margin: 0px auto;
+    margin-bottom: 35px;
+    background: white;
+    padding: 15px;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.3), 0px 3px 7px rgba(0,0,0,0.3), 0px 0px 1px #FFFFFF inset, 0px -3px 2px rgba(0,0,0,0.25) inset;
+
+}
+
+.bloque h3{
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: rgb(131, 7, 131)/**/;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #ccc;
+    font-family: "fajala";
+    text-align: center;
+}
+
+label{
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: #0e0e0e; 
+}
+.type-text{
+    display: block !important;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    
+}
+
+.type-text{
+    padding: 5px;
+    margin-bottom: 10px;
+    border-color: #ab4493;
+    border-style: solid;
+    background-color: #fbfbfb; 
+    border-radius: 5px;  
+    border-width: 1px; 
+    padding-left: 10px;
+
+} 
+
+.textarea{
+    display: block !important;
+    width: 95%;
+    height: 300px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+    
+.submit-button,
+.button
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+    border-radius: 2px;
+    color: white;
+    background: rgb(182, 23, 182);
+    border: 1px solid rgb(100, 1, 100);
+    cursor: pointer;
+    padding: 7px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.botonesEntrada{
+    display: flex;
+    justify-content: left;
+    width: 50%;
+}
+
+.botonesEntrada a{
+    color: #FFFFFF !important;
+    border: 1px solid #c9c9c9;
+    width: 100% !important;
+    text-align: center; 
+
+}
+.editar{
+    background: rgb(9, 149, 195);
+    color: blue;
+    
+}
+
+.eliminar{
+    background: rgb(239, 67, 58);
+    color: red;
+}
+
+
+.logout{
+    width: 115px;
+    text-align: center;
+}
+.gris{
+    background: linear-gradient(to bottom, #f9f9f9 0px, #e9e9e9 100%);
+    border: 1px solid #c9c9c9;
+    width: 115px;
+    color: purple;
+    text-align: center; 
+}
+
+
+
+/*Principal*/
+.principal{
+    float:left;
+    width: 65%;
+    min-height: 572px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+    margin-left: 20px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.principal a{
+    color: #333;
+}
+
+.principal h1{
+    font-size: 32px;
+    color: rgb(131, 7, 131)/**/;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #ccc;
+    font-family: "fajala";
+}
+
+.principal h2{
+    font-size: 20px;
+    color: rgb(182, 23, 182);
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #ccc;
+    font-family: "fajala";
+    margin-top: 25px;
+}
+
+.principal p{
+    margin-top: 8px;
+}
+
+.ver-todas a{
+    display: block;
+    border-radius: 2px;
+    padding: 5px;
+    color: white;
+    background: rgb(182, 23, 182);
+    border: 1px solid rgb(100, 1, 100);
+    cursor: pointer;
+    width: 160px;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+
+/*Pie de Pagina*/
+
+.footer{
+    clear: both;
+    width: 85%;
+    margin: 0px auto;
+    background: linear-gradient(to bottom, #f9f9f9 0px, #e9e9e9 100%);
+    border: 1px solid #c9c9c9;
+    border-bottom: none;
+    border-radius: 8px 8px 0px 0px;
+    color: #666;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    color: #a8a8a8;
+   }
+   
+   
+   ::-webkit-textarea-placeholder {
+    color: #a8a8a8;
+   }
