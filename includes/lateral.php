@@ -4,7 +4,7 @@
 <div id="login" class="bloque">
         <h3>Buscar</h3>
 
-         <form action="buscar.php" method="POST">
+         <form action="acciones/buscar.php" method="POST">
             <input type="text" class="type-text" name="busqueda"/>
             <input type="submit" class="submit-button" value="buscar" title="Buscar"/>
         </form>
@@ -17,7 +17,7 @@
             <a href="crearentrada.php" class="submit-button gris">Crear entrada</a>
             <a href="crearcategoria.php" class="submit-button gris">Crear categoría</a>
             <a href="misdatos.php" class="submit-button gris">Mis datos</a>
-            <a href="logout.php" class="submit-button logout">Cerrar Sesión</a>
+            <a href="acciones/logout.php" class="submit-button logout">Cerrar Sesión</a>
          </div>
     <?php endif; ?>
 
@@ -32,7 +32,7 @@
         <?php endif; ?>
 
 
-         <form action="login.php" method="POST">
+         <form action="acciones/login.php" method="POST">
             <label for="email">Email</label>
             <input type="email" class="type-text" name="email" />
 
@@ -56,7 +56,7 @@
                 </div>
             <?php endif; ?>
 
-            <form action="register.php" method="POST">
+            <form action="acciones/register.php" method="POST">
 
                 <label for="nombre">Nombre</label>
                 <input type="text" class="type-text" name="nombre" placeholder="Escribe tu nombre"/>

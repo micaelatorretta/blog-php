@@ -1,5 +1,5 @@
 <?php
-require_once'includes/conexion.php';
+require_once'../includes/conexion.php';
 
 if(isset($_POST)){
     //borrar error antiguo
@@ -34,5 +34,5 @@ if(isset($_POST)){
     }
 
 }
-header('Location: index.php');
+header('Location: ../index.php');
 ?>

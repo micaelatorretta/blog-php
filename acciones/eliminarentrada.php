@@ -1,5 +1,5 @@
 <?php
-require_once 'includes/conexion.php';
+require_once '../includes/conexion.php';
 
 if(isset($_SESSION['usuario']) && isset($_GET['id'])){
     $entradaID=$_GET['id'];
@@ -8,5 +8,5 @@ if(isset($_SESSION['usuario']) && isset($_GET['id'])){
     $sql="DELETE FROM entradas WHERE usuario_id=$usuarioID AND id=$entradaID";
     $borrar=mysqli_query($db,$sql);
 }
- header ("location: index.php");
+ header ("location: ../index.php");
 ?>

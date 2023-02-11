@@ -3,7 +3,7 @@
 
 if(isset($_POST)){
 
-    require_once 'includes/conexion.php';
+    require_once '../includes/conexion.php';
 
     if(!isset($_SESSION)){
         session_start();
@@ -77,6 +77,6 @@ else{
     $_SESSION['errores']=$errores;
 }
 
-header('Location: index.php'); 
+header('Location: ../index.php'); 
 
 ?>
